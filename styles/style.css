@@ -155,8 +155,6 @@ header:hover .transform-titile {
      grid-template-columns: repeat(4, 1fr);
      grid-column-gap: 20px;
      align-items: center;
-
-
  }
  .others-leagues img{
      height: 128px;
@@ -182,7 +180,7 @@ header:hover .transform-titile {
     border: 3px solid #f1f1f1;
   }
   
-  .container1 {
+  .feedback-info {
     text-align: center;
     padding: 20px;
     background-color: #f1f1f1;
@@ -214,6 +212,33 @@ header:hover .transform-titile {
   input[type=submit]:hover{
     background-color: #50492a;
     color: white;
+  }
+
+
+  @media only screen and (max-width:688px) {
+
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-right{
+        margin-top: 20px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-column-gap: 20px; */
+        grid-row-gap: 20px;
+    }
+
+    .others-leagues{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        align-items: center;
+    }
+      
   }
 
 
