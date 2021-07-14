@@ -1,9 +1,17 @@
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+/* adding utilities  */
+
+*{
+    margin: 0;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* header section */
 
 header{
     background-color: #2D25A0;
@@ -19,6 +27,7 @@ header{
     Height: 230px;
     margin-left: 71px;
     margin-right: 50px;
+    margin-top: 30px;
     
     
 }
@@ -44,15 +53,45 @@ header{
     justify-content: center;
     background: #E02C6D;
     color: #FFFFFF;
-    padding: 10px 24px;
+    padding: 8px 15px;
     width: 168px;
     height: 44px;
     margin-top: 27px;
     margin-left: 71px;
+    border-radius: 10px;
 }
 .watch-live-content{
     margin-right: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
+
+/* transformation */
+header:hover .transform-titile {
+    transform: translate(1270px);
+}
+
+.transform-titile{
+    position: relative;
+    left: -610px;
+    transition: transform 6s ;
+ } 
+
+ .transform-titile{
+     font-size: 1.5em;
+     color: aqua;
+ }
+
+ .blue{
+     color: rgb(0, 204, 255);
+ }
+
+ .white{
+     color: white;
+ }
+
+/* adding blog part */
+
 .container{
     background-color: #FFFFFF;
 }
@@ -97,84 +136,38 @@ height: 154px;
     font-size: 12px;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-.footer-logo img{
-    width: 483.87px;
-    height: 110px;
-}
-
-.social-icons img{
-    width: 32px;
-    height: 32px;
-}
-
-.copyright-tag span{
-    font-weight: 400;
-    font-style: normal;
-    color: #000000;
-}
-
-/* .ball{
-    position: relative;
-    left: 600px;
-    top: -355px;
-    transition: transform 4s ease-in-out;
-}
-
-header:hover .ball{
-    transform: translate(-100px, -150px);
-} */
 
 
-header:hover .transform-titile {
-    transform: translate(4000px);
-}
-
-.transform-titile{
-    position: relative;
-    left: -280px;
-    /* top: -400px; */
-    transition: transform 32s ;
- } 
-
- .transform-titile{
-     font-size: 1.5em;
-     color: aqua;
- }
-
-
- .others-leagues{
+/* other club */
+ .others-clubs{
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      grid-column-gap: 20px;
      align-items: center;
+
  }
- .others-leagues img{
+ .others-clubs img{
      height: 128px;
      width: 95px;
  }
- .others-leagues article{
+ .others-clubs article{
     background-color: darkcyan;
     padding-top: 10px;
     padding-left: 10px;
  }
- .others-leagues h4{
+ .others-clubs h4{
 
     color: rgb(255, 250, 250);
 }
- .others-leagues p{
+ .others-clubs p{
      font-weight: normal;
+     text-align: justify;
  }
  .top-blogs h2{
      text-align: center;
  }
+
+/* feedback */
 
  form {
     border: 3px solid #f1f1f1;
@@ -214,6 +207,36 @@ header:hover .transform-titile {
     color: white;
   }
 
+/* footer section */
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-icons img{
+    width: 32px;
+    height: 32px;
+}
+
+.copyright-tag span{
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+
+/* media quries */
+
+/* for phone */
 
   @media only screen and (max-width:688px) {
 
@@ -232,7 +255,7 @@ header:hover .transform-titile {
         grid-row-gap: 20px;
     }
 
-    .others-leagues{
+    .others-clubs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 20px;
@@ -241,6 +264,7 @@ header:hover .transform-titile {
       
   }
 
+  /* for tablet */
   @media only screen and (min-width:689px) and (max-width:992px) {
 
     .flex{
@@ -257,7 +281,7 @@ header:hover .transform-titile {
         grid-row-gap: 20px;
     }
 
-    .others-leagues{
+    .others-clubs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 20px;
@@ -265,6 +289,9 @@ header:hover .transform-titile {
     }
       
   }
+
+
+
 
 
 
